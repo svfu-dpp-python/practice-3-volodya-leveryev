@@ -2,13 +2,10 @@
   "tests": [
     {
       "name": "Testing",
-      "setup": "",
-      "run": "ls",
-      "input": "",
-      "output": "",
+      "run": "python .github/classroom/autograding.py",
       "comparison": "included",
       "timeout": 10,
-      "points": null
+      "points": 1
     }
   ]
 }
