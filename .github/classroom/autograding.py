@@ -3,12 +3,14 @@
 import os
 
 # 1. git log
+found = False
 extensions = ['.bmp', '.jpg', '.jpeg', '.gif', '.png']
 for f in os.listdir('1_log'):
     for e in extensions:
         if f.lower().endswith(e):
+            found = True
             break
-else:
+if not found:
     print('Screenshot after "git log" not found')
     exit(-1)
 
